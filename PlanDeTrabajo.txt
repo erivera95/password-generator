@@ -1,0 +1,36 @@
+# Create the project plan as a text file
+
+project_plan = """
+Plan de Trabajo: Generador de Contraseñas
+
+Etapa 1: Planificación
+
+1.1 Definición de Requisitos
+- Requisitos Funcionales
+  - El usuario puede seleccionar la longitud de la contraseña generada.
+  - El usuario puede seleccionar uno o varios de los siguientes criterios: incluir letras mayúsculas, incluir letras minúsculas, incluir números, incluir símbolos.
+  - Al hacer clic en el botón "Generar contraseña", el usuario puede ver una contraseña generada.
+  - El usuario puede hacer clic en un botón "Copiar al portapapeles" para guardar la contraseña en el portapapeles.
+  - Bonus: El usuario puede ver la fortaleza de la contraseña.
+
+- Requisitos No Funcionales
+  - La interfaz debe ser intuitiva y fácil de usar.
+  - La generación de contraseñas debe ser rápida.
+  - La aplicación debe ser segura, especialmente en la generación y copia de contraseñas.
+
+1.2 Diseño de la Interfaz de Usuario
+- Componentes de la Interfaz:
+  - Input para la longitud de la contraseña.
+  - Checkboxes para seleccionar criterios (mayúsculas, minúsculas, números, símbolos).
+  - Botón para generar la contraseña.
+  - Campo para mostrar la contraseña generada.
+  - Botón para copiar al portapapeles.
+  - Bonus: Indicador de fortaleza de la contraseña.
+
+Etapa 2: Desarrollo
+
+2.1 Estructura del Proyecto
+- Frontend:
+  - HTML para la estructura básica.
+  - CSS para el diseño y la disposición.
+  - JavaScript para la lógica de generación de contraseñas y copia al portapapeles.
