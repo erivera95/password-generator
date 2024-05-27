@@ -14,9 +14,9 @@ Este proyecto es un generador de contraseñas que permite a los usuarios crear c
 - El usuario puede hacer clic en un botón "Copiar al portapapeles" para guardar la contraseña en el portapapeles.
 - (Bonus) El usuario puede ver la fortaleza de la contraseña.
 
-## Capturas de Pantalla
+## Diseño Figma
 
-![Interfaz de usuario](ruta/a/tu/imagen.png)
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2F7JhQClzVox6AK06RJr53aB%2FPassword-Generator%3Fnode-id%3D0-1%26t%3DIE5uelVLFNWTe4oS-1" allowfullscreen></iframe>
 
 ## Diagrama de Componentes
 
