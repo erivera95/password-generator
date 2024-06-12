@@ -3,8 +3,8 @@ import './ContainerBoxStyles.css'; // Importa los estilos CSS
 import TextField from '@mui/material/TextField';
 
 const ContainerBox = () => {
+  
   const [value, setValue] = useState('');
-
   const handleChange = (event) => {
     let inputValue = event.target.value;
     if (inputValue > 100) {
@@ -17,9 +17,10 @@ const ContainerBox = () => {
     <div className="container">
       <div className="inner-container">
         <h1>Password Generator</h1>
+
         <TextField
           id="outlined-number"
-          label="Length MAX 100"
+          label="Length"
           type="number"
           value={value}
           onChange={handleChange}
@@ -27,11 +28,9 @@ const ContainerBox = () => {
           size="small"
           InputLabelProps={{
             shrink: true,
+            style: { textAlign: 'center' }
           }}
-          InputProps={{
-            style: { textAlign: 'center' }, // Centra el contenido del input
-          }}
-          style={{ textAlign: 'center' }} // Centra todo el TextField
+          helperText="Maximum limit 100 " 
         />
       </div>
     </div>
