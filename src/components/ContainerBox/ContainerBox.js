@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import './ContainerBoxStyles.css'; // Importa los estilos CSS
 import TextField from '@mui/material/TextField';
+import FeatureSwitches from '../FeaturesBox/FeatureSwitches';
 
 const ContainerBox = () => {
-  
+
   const [value, setValue] = useState('');
   const handleChange = (event) => {
     let inputValue = event.target.value;
@@ -32,6 +33,7 @@ const ContainerBox = () => {
           }}
           helperText="Maximum limit 100 " 
         />
+        <FeatureSwitches/>
       </div>
     </div>
   );
