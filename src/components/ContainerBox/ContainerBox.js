@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './ContainerBoxStyles.css'; // Importa los estilos CSS
 import TextField from '@mui/material/TextField';
 import FeatureSwitches from '../FeaturesBox/FeatureSwitches';
+import { SwitchesProvider } from '../../context/SwitchesContext';
 
 const ContainerBox = () => {
 
@@ -15,27 +16,30 @@ const ContainerBox = () => {
   };
 
   return (
-    <div className="container">
-      <div className="inner-container">
-        <h1>Password Generator</h1>
+    <SwitchesProvider>
 
-        <TextField
-          id="outlined-number"
-          label="Length"
-          type="number"
-          value={value}
-          onChange={handleChange}
-          inputProps={{ maxLength: 3 }}
-          size="small"
-          InputLabelProps={{
-            shrink: true,
-            style: { textAlign: 'center' }
-          }}
-          helperText="Maximum limit 100 " 
-        />
-        <FeatureSwitches/>
+      <div className="container">
+        <div className="inner-container">
+          <h1>Password Generator</h1>
+
+          <TextField
+            id="outlined-number"
+            label="Length"
+            type="number"
+            value={value}
+            onChange={handleChange}
+            inputProps={{ maxLength: 3 }}
+            size="small"
+            InputLabelProps={{
+              shrink: true,
+              style: { textAlign: 'center' }
+            }}
+            helperText="Maximum limit 100 "
+          />
+          <FeatureSwitches />
+        </div>
       </div>
-    </div>
+    </SwitchesProvider>
   );
 };
 

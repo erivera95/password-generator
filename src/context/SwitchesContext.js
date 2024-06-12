@@ -8,10 +8,10 @@ const SwitchesContext = createContext();
 // Creamos el proveedor del contexto
 const SwitchesProvider = ({ children }) => {
   const [switches, setSwitches] = useState({
-    feature1: false,
-    feature2: false,
-    feature3: false,
-    feature4: false,
+    uppercase: false,
+    symbols: false,
+    lowercase: false,
+    numbers: true,
   });
 
   const handleSwitchChange = (feature) => (event) => {
