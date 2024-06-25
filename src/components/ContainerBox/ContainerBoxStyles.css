@@ -18,3 +18,8 @@
   .inner-container h1 {
     font-family: Arial, sans-serif; /* Cambia por letra despues */
   }
+
+  .generateButton {
+    margin-top: 30px !important;
+    width: 150px;
+  }
